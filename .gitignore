@@ -21,3 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# VS Code Files
+.vscode
+
+# Services directory
+src/services/*
+!src/services/services.json
