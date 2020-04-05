@@ -1,34 +1,41 @@
 import React from 'react';
-import { Table, TableBody, TableRow, TableCell, makeStyles } from '@material-ui/core';
+import { Alert } from '@material-ui/lab';
+import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
-    noLines: {
-        borderBottom: "none",
-        paddingBottom: 0,
+    main: {
+      paddingTop: 2,
+      paddingBottom: 2
     }
-});
+  });
 
 function SecondaryProperties(props) {
     const classes = useStyles();
 
     return(
-        <Table size="small" style={{ width: "auto" }}>
-            <TableBody>
-                {props.secondaryProps.map((elem) => (
-                    <TableRow key={elem.label}>
-                        <TableCell className={classes.noLines}>{elem.label}</TableCell>
-                        {
-                        props.result !== null
-                            ?
-                            (<TableCell className={classes.noLines}>{convertToString(props.result[elem.field])}</TableCell>)
-                            :
-                            (<TableCell className={classes.noLines}></TableCell>)
-                        }
-                    </TableRow>
-                ))}
-            </TableBody>
-        </Table>
+        <div>
+            {props.secondaryProps.map((elem) => (
+                renderProperty(props.result, elem, classes)
+            ))}
+        </div>
     );
+}
+
+function renderProperty(result, property, style) {
+    if (result === null) {
+        return;
+    }
+    else {
+        if (result[property.field] === true) {
+            return (<Alert severity="success" className={style.main}>{property.label}</Alert>);
+        }
+        else if (result[property.field] === false) {
+            return (<Alert severity="error" className={style.main}>{property.label}</Alert>);
+        }
+        else {
+            return (<Alert severity="info" className={style.main}>{property.label}: {convertToString(result[property.field])}</Alert>);
+        }
+    }
 }
 
 function convertToString(value) {
