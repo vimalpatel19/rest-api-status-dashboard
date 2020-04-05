@@ -10,8 +10,8 @@ import Properties from './SecondaryProperties.js';
 function Status(props) {
     const data = Fetch(props.input.url);
 
-    const main = props.input.properties.filter(elem => elem.property === 'main');
-    const secondary = props.input.properties.filter(elem => elem.property === "secondary");
+    const main = props.input.properties.filter(elem => elem.kind === 'main');
+    const secondary = props.input.properties.filter(elem => elem.kind === "secondary");
 
     return(
         <Card>

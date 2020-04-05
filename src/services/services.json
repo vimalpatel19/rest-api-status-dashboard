@@ -4,15 +4,15 @@
         "url": "http://localhost:8000/sample",
         "properties": [
             {
-                "property": "main",
+                "kind": "main",
                 "field": "version",
-                "type": "normal"
+                "dataType": "normal"
             },
             {
-                "property": "secondary",
+                "kind": "secondary",
                 "field": "allowCoolFeature",
                 "label": "Cool Feature",
-                "type": "flag"
+                "dataType": "flag"
             }
         ]
     }
