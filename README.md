@@ -1,14 +1,14 @@
 # REST API Status Dashboard
 This project is part of my initial stab at learning the Javascript React library. The application was created by starting off with the [create-react-app](https://github.com/facebook/create-react-app) project.
 
-###### The dasboard is a SPA that provides a unified view of the current status/availability of one or more REST APIs:
+##### The dasboard is a SPA that provides a unified view of the current status/availability of one or more REST APIs:
 - Many REST APIs that I have either designed, seen, or used tend to have a health check endpoint (typically `/health`) used to verify that the application is indeed running. This dashboard is intended to leverage that endpoint to verify whether that service is up and running!
 - I have come across many services that also leverage that endpoint to provide information such as version number, feature/functionality flags, and other non-sensitive configurable properties about the service. This dashboard can also display the value of these properties/fields as well!
 
 ### Setting up the `services.json` file
 The `/src/services/services.json` file is used to specify which service(s) and which properties of each service to display in the dashboard.
 
-Here is a sample of the file:
+Here is file containing the configuration of a sample service:
 ```
 [
     {
@@ -30,6 +30,17 @@ Here is a sample of the file:
     }
 ]
 ```
+
+More information pertaining to the properties in the `services.json` file:
+
+| Property   | Definition                                                              |
+| --------   | ----------------------------------------------------------------------  |
+| service    | Name of the service to display in the dashboard                         |
+| url        | URL the dashboard will access to retrieve information about the service |
+| properties | The list of properties from the response to the URL above to display    |
+
+More information about the fields in each `properties` list object:
+
 
 ### Future enhancements
 - [ ] Make various enhancement updates to the Dashboard, including but not limited to:
