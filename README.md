@@ -31,15 +31,22 @@ Here is file containing the configuration of a sample service:
 ]
 ```
 
-More information pertaining to the properties in the `services.json` file:
+More information pertaining to the fields in the `services.json` file:
 
-| Property   | Definition                                                              |
-| --------   | ----------------------------------------------------------------------  |
-| service    | Name of the service to display in the dashboard                         |
-| url        | URL the dashboard will access to retrieve information about the service |
-| properties | The list of properties from the response to the URL above to display    |
+| Field      | Details                                                                     |
+| ---------- | --------------------------------------------------------------------------- |
+| service    | Name of the service to display in the dashboard                             |
+| url        | The URL the dashboard will access to retrieve information about the service |
+| properties | The list of properties received from the call made to the URL above         |
 
 More information about the fields in each `properties` list object:
+
+| Field    | Details                                                                               |
+| -------- | ------------------------------------------------------------------------------------- |
+| property | Indicates the kind of property: `main` or `secondary`                                 |
+| field    | Name of the field in the response from the call to the URL                            |
+| type     | Indicates the data type of the property: `flag` or `normal`                           |
+| label    | Label to display on the dashboard for this property (only for `secondary` properties) |
 
 
 ### Future enhancements
