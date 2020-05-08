@@ -12,6 +12,7 @@ const useStyles = makeStyles({
     paddingLeft: 25,
     paddingRight: 25,
     paddingTop: 25,
+    paddingBottom: 25
   }
 });
 

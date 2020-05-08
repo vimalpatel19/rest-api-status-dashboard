@@ -45,15 +45,16 @@ More information about the fields in each `properties` list object:
 | -------- | ------------------------------------------------------------------------------------- |
 | kind     | Indicates the kind of property: `main` or `secondary`                                 |
 | field    | Name of the field in the response from the call to the URL                            |
-| dataType | Indicates the data type of the property: `flag` or `normal`                           |
+| dataType | Indicates the data type of the property: `flag`, `normal`, or `logLevel`              |
 | label    | Label to display on the dashboard for this property (only for `secondary` properties) |
 
 
 ### Future enhancements
 - [ ] Make various enhancement updates to the Dashboard, including but not limited to:
     - [ ] Placing the secondary properties into a default hidden section that can be expanded using a drop-down open in the card.
-    - [ ] Using color (red/green) to indicate the state of secondary properties that are of type flag.
-    - [ ] Using **Alert** and **Skeleton** features of [Material UI Lab](https://material-ui.com/components/about-the-lab/) to enhance user experience of the dashboard.
-- [ ] Display properties about the service that are simply included in the `services.json` file and do not require calling the service. 
+    - [x] Using color (red/green) to indicate the state of secondary properties that are of type flag.
+    - [x] Using **Alert** and **Skeleton** features of [Material UI Lab](https://material-ui.com/components/about-the-lab/) to enhance user experience of the dashboard.
+    - [ ] Using color to indicate differences in `logLevel` property values (i.e. INFO vs. DEBUG)
+- [ ] Display properties about the service that are simply included in the `services.json` file with their values and do not require calling the service. 
 - [ ] Auto refreshing of the services' status on a time based interval (to provide more real-time experience without having the users to refresh the page)
 - [ ] Ability to make additional calls to a service that can provide additional information regarding the service's status beyond the fact that the service is up.

@@ -1,18 +1,206 @@
 [
     {
-        "service": "Sample Service",
-        "url": "http://localhost:8000/sample",
+        "service": "Member Search",
+        "url": "http://localhost:8000/member-search",
         "properties": [
             {
                 "kind": "main",
-                "field": "version",
+                "field": "apiVersion",
                 "dataType": "normal"
             },
             {
                 "kind": "secondary",
-                "field": "allowCoolFeature",
-                "label": "Cool Feature",
+                "field": "allowUpdates",
+                "label": "Updates",
                 "dataType": "flag"
+            },
+            {
+                "kind": "secondary",
+                "field": "useEventMessageStream",
+                "label": "Event Message Stream",
+                "dataType": "flag"
+            },
+            {
+                "kind": "secondary",
+                "field": "useMongoDBReadOnly",
+                "label": "MongoDB Read Only",
+                "dataType": "flag"
+            },
+            {
+                "kind": "secondary",
+                "field": "restrictParams",
+                "label": "Restrict Params",
+                "dataType": "flag"
+            },
+            {
+                "kind": "secondary",
+                "field": "logLevel",
+                "label": "Log Level",
+                "dataType": "normal"
+            }
+        ]
+    },
+    {
+        "service": "Member Addresses",
+        "url": "http://localhost:8000/member-addresses",
+        "properties": [
+            {
+                "kind": "main",
+                "field": "apiVersion",
+                "dataType": "normal"
+            },
+            {
+                "kind": "secondary",
+                "field": "allowUpdates",
+                "label": "Updates",
+                "dataType": "flag"
+            },
+            {
+                "kind": "secondary",
+                "field": "useEventMessageStream",
+                "label": "Event Message Stream",
+                "dataType": "flag"
+            },
+            {
+                "kind": "secondary",
+                "field": "useMongoDBReadOnly",
+                "label": "MongoDB Read Only",
+                "dataType": "flag"
+            },
+            {
+                "kind": "secondary",
+                "field": "restrictParams",
+                "label": "Restrict Params",
+                "dataType": "flag"
+            },
+            {
+                "kind": "secondary",
+                "field": "logLevel",
+                "label": "Log Level",
+                "dataType": "normal"
+            }
+        ]
+    },
+    {
+        "service": "Member PCPs",
+        "url": "http://localhost:8000/member-pcps",
+        "properties": [
+            {
+                "kind": "main",
+                "field": "apiVersion",
+                "dataType": "normal"
+            },
+            {
+                "kind": "secondary",
+                "field": "allowUpdates",
+                "label": "Updates",
+                "dataType": "flag"
+            },
+            {
+                "kind": "secondary",
+                "field": "useEventMessageStream",
+                "label": "Event Message Stream",
+                "dataType": "flag"
+            },
+            {
+                "kind": "secondary",
+                "field": "useMongoDBReadOnly",
+                "label": "MongoDB Read Only",
+                "dataType": "flag"
+            },
+            {
+                "kind": "secondary",
+                "field": "restrictParams",
+                "label": "Restrict Params",
+                "dataType": "flag"
+            },
+            {
+                "kind": "secondary",
+                "field": "logLevel",
+                "label": "Log Level",
+                "dataType": "normal"
+            }
+        ]
+    },
+    {
+        "service": "Member Alternate Contacts",
+        "url": "http://localhost:8000/member-alternate-contacts",
+        "properties": [
+            {
+                "kind": "main",
+                "field": "apiVersion",
+                "dataType": "normal"
+            },
+            {
+                "kind": "secondary",
+                "field": "allowUpdates",
+                "label": "Updates",
+                "dataType": "flag"
+            },
+            {
+                "kind": "secondary",
+                "field": "useEventMessageStream",
+                "label": "Event Message Stream",
+                "dataType": "flag"
+            },
+            {
+                "kind": "secondary",
+                "field": "useMongoDBReadOnly",
+                "label": "MongoDB Read Only",
+                "dataType": "flag"
+            },
+            {
+                "kind": "secondary",
+                "field": "restrictParams",
+                "label": "Restrict Params",
+                "dataType": "flag"
+            },
+            {
+                "kind": "secondary",
+                "field": "logLevel",
+                "label": "Log Level",
+                "dataType": "normal"
+            }
+        ]
+    },
+    {
+        "service": "Member Material Requests",
+        "url": "http://localhost:8000/member-material-requests",
+        "properties": [
+            {
+                "kind": "main",
+                "field": "apiVersion",
+                "dataType": "normal"
+            },
+            {
+                "kind": "secondary",
+                "field": "allowUpdates",
+                "label": "Updates",
+                "dataType": "flag"
+            },
+            {
+                "kind": "secondary",
+                "field": "useEventMessageStream",
+                "label": "Event Message Stream",
+                "dataType": "flag"
+            },
+            {
+                "kind": "secondary",
+                "field": "useMongoDBReadOnly",
+                "label": "MongoDB Read Only",
+                "dataType": "flag"
+            },
+            {
+                "kind": "secondary",
+                "field": "restrictParams",
+                "label": "Restrict Params",
+                "dataType": "flag"
+            },
+            {
+                "kind": "secondary",
+                "field": "logLevel",
+                "label": "Log Level",
+                "dataType": "normal"
             }
         ]
     }
